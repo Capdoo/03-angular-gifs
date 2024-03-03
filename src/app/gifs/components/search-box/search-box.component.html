@@ -2,4 +2,9 @@
 <input type="text"
     class="form-control"
     placeholder="Buscar gifs"
+    (keyup.enter)="searchTag()"
+    #cualquierReferencia
 >
+
+
+<!-- Key Upo Enter solo manda la info cuando el boton enter se presiona -->

@@ -1,0 +1,23 @@
+
+<div class="row">
+
+    <div *ngFor="let item of gifsLand" class="col-md-3 col-sm-6">
+
+        <!-- Card a repetir n veces -->
+        <div class="card mb-2 text-center bg-dark">
+
+            <img [src]="item.images.downsized_medium.url" [alt]="item.title" class="card-img-top">
+
+            <div class="card-body text-white">
+                <p class="card-text">{{item.title}}</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- <ul>
+    <li>Primero</li>
+    <li>Segundo</li>
+    <li>Tercero</li>
+    <li>Cuarto</li>
+</ul> -->
