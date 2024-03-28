@@ -1,0 +1,10 @@
+<!-- Card a repetir n veces -->
+<div class="card mb-2 text-center bg-dark text-center">
+
+    <shared-lazy-image [urlLand]="gifSingleLand.images.downsized_medium.url" [altLand]="gifSingleLand.title || 'NoName'"></shared-lazy-image>
+    <!-- <img [src]="gifSingleLand.images.downsized_medium.url" [alt]="gifSingleLand.title" class="card-img-top"> -->
+
+    <div class="card-body text-white">
+        <p class="card-text">{{gifSingleLand.title || 'No title'}}</p>
+    </div>
+</div>

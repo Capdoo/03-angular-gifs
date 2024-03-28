@@ -3,15 +3,19 @@ import { CommonModule } from '@angular/common';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { SearchBoxComponent } from './components/search-box/search-box.component';
 import { ListadoComponent } from './components/listado/listado.component';
+import { AtomicComponent } from './components/atomic/atomic.component';
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
   declarations: [
     HomePageComponent,
     SearchBoxComponent,
-    ListadoComponent
+    ListadoComponent,
+    AtomicComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    SharedModule
   ],
   exports: [
     HomePageComponent
